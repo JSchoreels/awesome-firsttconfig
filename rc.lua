@@ -40,7 +40,7 @@ end
 beautiful.init("/home/jschoreels/.config/awesome/gigamos.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
+terminal = "x-terminal-emulator"
 editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
