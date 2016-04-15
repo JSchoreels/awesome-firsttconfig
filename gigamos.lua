@@ -8,7 +8,7 @@
 
 -- {{{ Main
 theme = {}
-theme.wallpaper_cmd = { "awsetbg '/home/jschoreels/.config/awesome/starwars01.jpg'" }
+theme.wallpaper_cmd = { "awsetbg '/home/jschoreels/.config/awesome/background.jpg'" }
 -- }}}
 
 -- {{{ Styles
