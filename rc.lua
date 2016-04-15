@@ -243,6 +243,8 @@ globalkeys = awful.util.table.join(
 
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
+    awful.key({ modkey,  }, "l", function () awful.util.spawn("gnome-screensaver-command -l") end),
+
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
 
@@ -376,4 +378,7 @@ client.add_signal("focus", function(c) c.border_color = beautiful.border_focus e
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
-os.execute("synapse &")
+awful.util.spawn_with_shell("synapse")
+
+-- Screen saver
+awful.util.spawn_with_shell("gnome-screensaver")
